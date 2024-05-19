@@ -7,7 +7,7 @@ services:
     container_name: packet_buddy
     restart: always
     environment:
-      - OPENAI_API_KEY="<your-key-here>"       
+      - OPENAI_API_KEY=sk-pj-abcd1234       
     build: 
       context: ./
       dockerfile: ./docker/Dockerfile   

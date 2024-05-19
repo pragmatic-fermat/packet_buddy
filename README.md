@@ -1,8 +1,9 @@
 # packet_buddy
-pcap analysis provided by chatGPT 4 Turbo
+**pcap analysis provided by chatGPT 4 Turbo**
 
 Some fix and enhancements based on [https://github.com/automateyournetwork/packet_buddy](https://github.com/automateyournetwork/packet_buddy)
-( The author, John Capobianco, is now focused on ollama, as we want to stay on openai chatgpt)
+
+(The author, John Capobianco, is now focused on ollama, as we want to stay on openai chatgpt)
 
 ## Getting started
 

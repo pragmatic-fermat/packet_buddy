@@ -84,7 +84,7 @@ class ChatWithPCAP:
     def store_in_chroma(self):
         embeddings = OpenAIEmbeddings()
         self.vectordb = Chroma.from_documents(self.docs, embedding=embeddings)
-        self.vectordb.persist()
+        ## Deprecated self.vectordb.persist()
 
     def setup_conversation_memory(self):
         self.memory = ConversationBufferMemory(memory_key="chat_history", return_messages=True)

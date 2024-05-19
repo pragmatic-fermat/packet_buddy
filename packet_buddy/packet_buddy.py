@@ -36,23 +36,9 @@ def returnSystemText(pcap_data: str) -> str:
         hints :
         http means tcp.port = 80
         https means tcp.port = 443
-        snmp means udp.port = 161 or udp.port = 162
-        ntp means udp.port = 123
-        ftp means tcp.port = 21
-        ssh means tcp.port = 22
-        BGP means tcp.port = 179
-        OSPF uses IP protocol 89 (not TCP/UDP port-based, but rather directly on top of IP)
-        MPLS doesn't use a TCP/UDP port as it's a data-carrying mechanism for high-performance telecommunications networks
-        DNS means udp.port = 53 (also tcp.port = 53 for larger queries or zone transfers)s
-        DHCP uses udp.port = 67 for the server and udp.port = 68 for the client
-        SMTP means tcp.port = 25 (for email sending)
-        POP3 means tcp.port = 110 (for email retrieval)
-        IMAP means tcp.port = 143 (for email retrieval, with more features than POP3)
-        HTTPS means tcp.port = 443 (secure web browsing)
-        LDAP means tcp.port = 389 (for accessing and maintaining distributed directory information services over an IP network)
-        LDAPS means tcp.port = 636 (secure version of LDAP)
-        SIP means tcp.port = 5060 or udp.port = 5060 (for initiating interactive user sessions involving multimedia elements such as video, voice, chat, gaming, etc.)
-        RTP (Real-time Transport Protocol) doesn't have a fixed port but is commonly used in conjunction with SIP for the actual data transfer of audio and video streams.
+        quic means udp.port = 443
+        cca means TCP congestion control algorithm
+        bif means bytes in flight
     """
     # Might be redundant - pcap data - alraedy doing rag - less tokens
     return PACKET_WHISPERER
